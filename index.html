@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende POO</title>
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-toggle-btn">
+            <span class="light-icon">☀️</span>
+            <span class="dark-icon">🌙</span>
+        </button>
+    </div>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.32/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <!-- Página Principal -->
+    <div id="mainPage" class="container">
+        <div class="welcome">
+            <h1>🌟💻Bienvenido al Curso de POO💻🌟</h1>
+            <p class="quote">"La programación orientada a objetos nos permite modelar el mundo real en código"</p>
+        </div>
+
+        <div class="section">
+            <h2>🤔¿Qué es POO?🤔</h2>
+            <div class="imagen-container">
+                <img src="rubik.jpg" alt="Concepto de POO" class="centered-image">
+            <p>La programación orientada a objetos o llamada como (POO) es un paradigma de programación basado en la idea de modelar el mundo real utilizando objetos, que son entidades que combinan datos (atributos o propiedades) y comportamiento (métodos o funciones).
+                En programación orientada a objetos, en lugar de escribir todo el código en una estructura enorme y confusa, se divide el programa en partes más pequeñas y organizadas llamadas clases. Una clase es como una forma o plantilla que define las propiedades y el comportamiento que estarán presentes en los objetos creados a partir de ella.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>¿Para qué funciona?</h2>
+            <div class="imagen-container2">
+                <img src="pooxd.jpg" alt="pa que" class="centered-image2">
+
+            <p>funciona para estructurar y organizar el código de una manera más clara, reutilizable y fácil de mantener. Se usa en una gran variedad de aplicaciones, desde videojuegos hasta sistemas empresariales.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>📹Historia de la programacion orientada a objetos📹</h3>
+            <div class="iamgen-container3">
+                <img src="historia poo.jpg" alt="imagen de historia" class="centered-image3">
+
+            <p>La programación orientada a objetos (POO) es un desarrollo de programación estructurado utilizado para resolver problemas relacionados con la complejidad del software. Su desarrollo tomó décadas con contribuciones significativas de varios lingüistas y científicos informáticos.
+            </p>
+            <h3>🎩Decada de los 60🎩</h3>
+            <p>En la década de 1960, el ingeniero noruego Ole-Johan Dahl y el científico de la computación Kristen Nygaard del Centro de Computación Noruego (Norsk Regnesentral) estaban trabajando en simulaciones para representar sistemas complejos. Para ello, desarrollaron un lenguaje llamado Simula (1967), considerado el primer lenguaje de programación orientado a objetos.
+
+                Simula introdujo conceptos como:
+                
+                Clases y objetos, para representar entidades del mundo real.
+                Herencia, permitiendo que una clase heredara características de otra.</p>
+            <h3>🎠Decada de los 70🎠</h3>
+            <p>El lenguaje Smalltalk fue desarrollado en la década de 1970 por Alan Kay y su equipo en Xerox PARC y se considera el primer lenguaje de programación totalmente orientado a objetos. Smalltalk refinó el concepto de OOP y popularizó los siguientes términos:
+            <li>Encapsulamiento: protegiendo los datos dentro de los objetos.
+            </li>
+            <li>
+                Polimorfismo: permitiendo que métodos con el mismo nombre funcionaran de manera diferente en distintos objetos.
+            </li>
+            </p>
+            <h3>🎰Decada de los 80🎰</h3>
+            <img src="pc vieja.jpg" alt="Computu 80"class="centered-image5">
+            <p>En la década de 1980, el POO comenzó a implementarse en lenguajes más populares, lo que facilitó su adopción en la industria. Algunos idiomas principales
+            <li>C++ (1983): Creado por Bjarne Stroustrup, combinó la potencia de C con los principios de la POO.</li>
+            <li>Objective-C (1984): Extensión de C utilizada en el desarrollo de software para macOS y iOS.</li>
+            <h3>📟Decada de los 90📟</h3>
+            </p>
+            <img src="compu.jpg" alt="computadora de los 90" class="centered-image4">
+            <p>En la década de 1990, la programación orientada a objetos se convirtió en el estándar para la mayoría de los sistemas grandes, gracias a los siguientes lenguajes:
+            <li>Java (1995): Desarrollado por Sun Microsystems, introdujo el concepto de "Escribe una vez, ejecuta en cualquier lugar" gracias a la Máquina Virtual de Java (JVM).</li>
+            <li>Python (1991): Aunque inicialmente no era totalmente orientado a objetos, con el tiempo adoptó muchas características de POO.</li>
+            </p>
+            <h3>🚧Actualidad🚧</h3>
+            <p>Hoy en día, Poo es el paradigma más utilizado para el desarrollo de software, desde aplicaciones móviles hasta sistemas empresariales.
+               Lenguajes como C#, Ruby, Kotlin, Swift y JavaScript han adoptado o incorporado principios de poo. A pesar de su éxito, en los últimos años han surgido enfoques alternativos, como la programación funcional, que pretenden abordar algunos de los desafíos de la POO, como la complejidad en sistemas muy grandes.
+            </p>
+            </div>
+        
+        </div>
+
+        <div class="section">
+            <h3>💭Conceptos Básicos💭</h3>
+            
+            <h3>Clase</h3>
+            <p>Una clase es como un molde o una plantilla para crear objetos. Imagina que tienes un plano de un coche, pero aún no es un coche real, solo un diseño. Un ejemplo seria:</p>
+            <div class="example">
+                <pre>
+class micamioneta {
+    String marca;
+    String modelo;
+    
+    void arrancar() {
+        System.out.println("la camioneta arranca");
+    }
+}
+                </pre>
+            <li>La clase camioneta seria el plano</li>
+            <li>La marca y modelo son los atributos</li>
+            <li>El arrancar seria basicamente el metodo para que la camioneta ruede</li>
+            </div>
+
+            <h4>Objeto</h4>
+            <p>Un objeto es una instancia específica de una clase. Representa una entidad concreta con sus propios valores de atributos.</p>
+            <div class="example">
+                <pre>
+camioneta micamioneta = new camioneta();
+micamioneta.marca = "Toyota";
+micamioneta.modelo="Hilux"
+                </pre>
+            <li>micamioneta es un objeto creado por la clase de auto</li>
+            <li>Se le asigna la marca "Toyota" y el modelo "Hilux"</li>
+            </div>
+
+            <h4>Instancia</h4>
+            <p>Una instancia es un objeto específico creado a partir de una clase. Cada instancia tiene sus propios valores de atributos independientes.</p>
+            <div class="example">
+                <pre>
+camioneta camioneta1 = new camioneta();  // Primera instancia
+camioneta camioneta2 = new camioneta();  // Segunda instancia
+                </pre>
+            <li>camioneta1 y camioneta2 son dos instancias diferentes de la clase Coche</li>
+            <li>Cada instancia puede tener su propio fabricante y modelo sin afectar a otras instancias.</li>
+            </div>
+        </div>
+
+        <button onclick="showLanguageSelection()" class="next-btn">Siguiente</button>
+    </div>
+
+    <!-- Página de Selección de Lenguaje -->
+    <div id="languagePage" class="container" style="display: none;">
+        <h2>Selecciona tu lenguaje preferido:</h2>
+        <div class="language-selection">
+            <button onclick="selectLanguage('java')" class="language-btn">Java</button>
+            <button onclick="selectLanguage('python')" class="language-btn">Python</button>
+        </div>
+    </div>
+
+    <!-- Página de Principios -->
+    <div id="principlePage" class="container" style="display: none;">
+        <h2 id="principleTitle"></h2>
+        <div id="principleContent"></div>
+        <div id="codeExample" class="example"></div>
+        <div id="codeExplanation" class="explanation"></div>
+        <div class="navigation-buttons">
+            <button onclick="previousPrinciple()" class="nav-btn" id="prevBtn">Anterior</button>
+            <button onclick="nextPrinciple()" class="nav-btn" id="nextBtn">Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Página de Examen -->
+    <div id="examPage" class="container" style="display: none;">
+        <div class="timer">Tiempo restante: <span id="countdown">3:00</span></div>
+        <div id="questionContainer"></div>
+        <button onclick="submitExam()" class="submit-btn">Entregar Examen</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
